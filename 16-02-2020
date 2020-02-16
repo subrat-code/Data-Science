@@ -1,0 +1,110 @@
+xbar=60
+std=10
+X=70
+
+PNORM(70,XBAR,STD)
+pnorm(70,xbar,std)
+
+
+#R as a calculator
+
+1+1
+2+3*4
+exp(1)
+sqrt(10)
+pi
+2*pi*6378
+
+#R as a smart calculator
+
+x <-2
+y<-5
+z<-1
+x*y*z
+
+
+#vector
+
+db1_var <-c(1,2.5,4.5)
+vect <-c(2,1,5,4)
+vect
+
+x<-c(2,0,0,4)
+y<-c(1,9,9,9)
+x+y
+x*4
+sqrt(x)
+p<-c(1.9,9,9)
+
+vect[3]
+
+x<-c(2,0,0,4)
+x[1]
+x[-1]
+x[1] <-3
+
+x[1] <-3;x
+
+y<9
+x[-1] <-5;x
+
+y[4]=1;y
+y<9
+y[y<9]=2
+y
+
+#Data frames
+
+df <- data.frame(x=1:3, y=c("a","b","c"))
+df
+data.frame(height=c(150,160),weight=c(65,72))
+sds <-data.frame(height=c(150,160),weight=c(65,72))
+sds
+df[1,2]
+df[3,2]
+
+df[,2]
+
+
+#1
+df[2,]
+df[2,c(1,2)]
+
+#2
+df[1,]
+
+#3
+df[-2,]
+
+#4
+df[-2,1]
+
+#5
+df[2,]
+
+
+df[2, 1:2]
+
+df[c(1,3),]
+
+df[1:3,]
+
+df[c(1,3),c(1,2)]
+
+
+##################################-----------
+datasets::airquality
+
+data("airquality")
+
+airquality <- datasets::airquality
+
+head(airquality)
+tail(airquality)
+airquality[,c(1,2)]
+########
+airquality$Wind
+summary(airquality$Wind)
+
+summary(airquality$Temp)
+summary(airquality)
